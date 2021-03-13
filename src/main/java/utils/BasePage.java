@@ -1,11 +1,10 @@
 package utils;
 
-import io.cucumber.java.Scenario;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 
@@ -14,8 +13,7 @@ import java.util.function.Function;
 
 public class BasePage {
     private static Logger logger;
-    private static BasePage basePage;
-    static WebDriver driver;
+    public static WebDriver driver;
     private WebDriverWait expWait;
     public static final int MIN_WAIT = 5;
     public static final int MEDIUM_WAIT = 10;
@@ -23,38 +21,16 @@ public class BasePage {
     public static final int PAGE_LOAD_TIMEOUT = 60;
     public static final int POLLING = 2;
 
-
     public BasePage() {
-        if (driver == null) {
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
-            logger = LogManager.getLogger(BasePage.class);
-        }
-
+        logger = LogManager.getLogger(BasePage.class);
     }
 
-    // This method returns the driver value
-    public static WebDriver getDriver() {
-        return driver;
+    //This method is to set driver
+    public static void setDriver(WebDriver driver){
+        BasePage.driver = driver;
     }
 
-    // This method set up the driver
-    public static void setUpDriver() {
-        if (basePage == null) {
-            basePage = new BasePage();
-        }
-    }
-
-    // This method is to tear down the driver after execution
-    public static void tearDownDriver() {
-        if (driver != null) {
-            driver.close();
-            driver.quit();
-        }
-        driver = null;
-    }
-
-    //Set Explicit Wait
+      //Set Explicit Wait
     public WebDriverWait explicitWait(long seconds) {
         this.expWait = new WebDriverWait(driver, seconds);
         return expWait;
@@ -193,7 +169,8 @@ public class BasePage {
         String text = "";
         try {
             logger.info("Get text from element");
-            text = driver.findElement(locator).getText().trim();
+            WebElement element =getVisibleElement(locator);
+            text = element.getText().trim();
             logger.info("Text from element is :: " + text);
         } catch (Exception e) {
             Assert.fail(e.getMessage());

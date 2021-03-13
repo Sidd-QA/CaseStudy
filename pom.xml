@@ -8,120 +8,131 @@
     <artifactId>CaseStudy</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>SampleAutomation</name>
-<dependencies>
-    <dependency>
-        <groupId>io.rest-assured</groupId>
-        <artifactId>rest-assured</artifactId>
-        <version>4.3.3</version>
-        <scope>test</scope>
-    </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.3.3</version>
+            <scope>test</scope>
+        </dependency>
 
-    <dependency>
-        <groupId>io.rest-assured</groupId>
-        <artifactId>json-path</artifactId>
-        <version>4.3.3</version>
-        <scope>test</scope>
-    </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+            <version>4.3.3</version>
+            <scope>test</scope>
+        </dependency>
 
-    <dependency>
-        <groupId>io.rest-assured</groupId>
-        <artifactId>json-schema-validator</artifactId>
-        <version>4.3.3</version>
-        <scope>test</scope>
-    </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>4.3.3</version>
+            <scope>test</scope>
+        </dependency>
 
-    <dependency>
-        <groupId>io.rest-assured</groupId>
-        <artifactId>xml-path</artifactId>
-        <version>4.3.3</version>
-        <scope>test</scope>
-    </dependency>
-
-
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-testng</artifactId>
-        <version>6.9.1</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-java</artifactId>
-        <version>6.8.1</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-core</artifactId>
-        <version>6.9.1</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-picocontainer</artifactId>
-        <version>6.9.1</version>
-        <scope>test</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>3.141.59</version>
-    </dependency>
-
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-jvm-deps</artifactId>
-        <version>1.0.6</version>
-    </dependency>
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>gherkin-jvm-deps</artifactId>
-        <version>1.0.4</version>
-    </dependency>
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>gherkin</artifactId>
-        <version>5.0.0</version>
-    </dependency>
-
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>tag-expressions</artifactId>
-        <version>3.0.0</version>
-    </dependency>
-
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-        <version>2.14.0</version>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-api</artifactId>
-        <version>2.14.0</version>
-    </dependency>
-
-    <dependency>
-        <groupId>tech.grasshopper</groupId>
-        <artifactId>extentreports-cucumber6-adapter</artifactId>
-        <version>2.6.0</version>
-    </dependency>
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>6.9.10</version>
-    </dependency>
-
-    <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>3.12.0</version>
-    </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>xml-path</artifactId>
+            <version>4.3.3</version>
+            <scope>test</scope>
+        </dependency>
 
 
-</dependencies>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>6.9.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>6.8.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>6.9.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>6.9.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-jvm-deps</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>gherkin-jvm-deps</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>tag-expressions</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.14.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber6-adapter</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.9.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.3.3</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+            <version>4.3.3</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
